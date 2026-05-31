@@ -4,7 +4,7 @@ This day builds the foundation of how Google Earth Engine (GEE) actually works a
 
 ---
 
-## 🧠 Core Idea
+## Core Idea
 
 GEE is a **server-side geospatial computation engine**, not a traditional data tool.
 
@@ -12,7 +12,7 @@ You do not work directly with data — you define **processing instructions**, a
 
 ---
 
-## 📌 Key Concepts
+## Key Concepts
 
 - **GEE system**
   - Runs on Google servers (not local machine)
@@ -59,7 +59,7 @@ You do not work directly with data — you define **processing instructions**, a
 
 ---
 
-## 🌍 Why it matters
+## Why it matters
 
 Satellite data is not an image problem — it is a **spatio-temporal measurement system**.
 
@@ -70,7 +70,7 @@ Understanding this prevents:
 
 ---
 
-## ⚠️ Common mistakes
+## Common mistakes
 
 - Treating GEE outputs as ground truth
 - Thinking images are like photographs
@@ -80,6 +80,6 @@ Understanding this prevents:
 
 ---
 
-## 🎯 Takeaway
+## Takeaway
 
 GEE is not an image viewer — it is a **distributed system for processing Earth observation data through mathematical pipelines**.
