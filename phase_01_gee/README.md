@@ -44,27 +44,6 @@ By the end of this phase, you should be able to:
 
 ---
 
-## Folder Structure
-
-```text
-phase_01_gee/
-│
-├── README.md
-│
-├── 01_image_architecture/
-├── filtering_reducers/
-├── roi_buffer_crs/
-├── cloud_masking/
-├── resampling/
-├── ndvi_computation/
-├── ndvi_interpretation/
-├── time_series/
-├── spatial_aggregation/
-├── pipeline_integration/
-├── raster_export/
-├── shapefile_export/
-├── monthly_ndvi_export/
-└── csv_export/
 ```
 
 Each folder contains:
