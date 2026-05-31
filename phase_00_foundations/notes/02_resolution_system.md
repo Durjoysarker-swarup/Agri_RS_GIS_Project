@@ -1,4 +1,4 @@
-# DAY 2 — Full Resolution System
+# Full Resolution System
 
 ## Core Idea
 Satellite data quality is defined by resolution. Different types of resolution control what you can see, when you can see it, and how accurately you can measure it.
