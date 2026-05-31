@@ -43,7 +43,7 @@ Example (Sentinel-2):
 | Water        | 102      |
 | Soil         | 3450     |
 
-👉 These values cannot be interpreted directly.
+These values cannot be interpreted directly.
 
 ---
 
@@ -58,7 +58,7 @@ Bit-depth defines how many values a pixel can represent.
 
 Sentinel-2 typically uses higher bit-depth encoding.
 
-👉 Higher bit-depth allows detection of small variations in crop condition.
+Higher bit-depth allows detection of small variations in crop condition.
 
 ---
 
