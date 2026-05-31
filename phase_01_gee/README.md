@@ -47,32 +47,30 @@ By the end of this phase, you should be able to:
 ## Folder Structure
 
 ```text
-phase_01_gee_core_skills/
+phase_01_gee/
 │
 ├── README.md
 │
-├── day_01_image_architecture/
-├── day_02_filtering_reducers/
-├── day_03_roi_buffer_crs/
-├── day_04_cloud_masking/
-├── day_05_resampling/
-├── day_06_ndvi_computation/
-├── day_07_ndvi_interpretation/
-├── day_08_time_series/
-├── day_09_spatial_aggregation/
-├── day_10_pipeline_integration/
-├── day_11_raster_export/
-├── day_12_shapefile_export/
-├── day_13_monthly_ndvi_export/
-└── day_14_csv_export/
+├── 01_image_architecture/
+├── filtering_reducers/
+├── roi_buffer_crs/
+├── cloud_masking/
+├── resampling/
+├── ndvi_computation/
+├── ndvi_interpretation/
+├── time_series/
+├── spatial_aggregation/
+├── pipeline_integration/
+├── raster_export/
+├── shapefile_export/
+├── monthly_ndvi_export/
+└── csv_export/
 ```
 
 Each folder contains:
 
 * Notes (`README.md`)
 * GEE scripts
-* Outputs and examples
-* Practice exercises (if applicable)
 
 ---
 
