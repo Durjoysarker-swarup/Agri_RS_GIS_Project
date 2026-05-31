@@ -73,6 +73,6 @@ Without proper filtering and reduction:
 
 ---
 
-## 🎯 Takeaway
+## Takeaway
 
 Reduction transforms multiple noisy satellite observations into a single stable representation of the Earth surface, but only if filtering is done correctly.
