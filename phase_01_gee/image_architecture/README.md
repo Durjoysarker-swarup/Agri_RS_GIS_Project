@@ -1,4 +1,4 @@
-# DAY 1 — GEE System + Image Architecture
+# GEE System + Image Architecture
 
 This day builds the foundation of how Google Earth Engine (GEE) actually works as a geospatial computation system and how satellite data is structured inside it.
 
