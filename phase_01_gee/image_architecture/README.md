@@ -1,51 +1,85 @@
-# PHASE 1 — Google Earth Engine (GEE) Core Skills
+# DAY 1 — GEE System + Image Architecture
 
-This phase builds the fundamental understanding of how satellite data is structured, processed, and transformed inside Google Earth Engine.
-
-The focus is not coding — but **data logic, physical meaning, and spatial thinking** behind every operation.
+This day builds the foundation of how Google Earth Engine (GEE) actually works as a geospatial computation system and how satellite data is structured inside it.
 
 ---
 
-## 🎯 Core Objective
+## 🧠 Core Idea
 
-Understand how raw satellite signals become analysis-ready agricultural information through filtering, reduction, spectral logic, spatial processing, and time-series construction.
+GEE is a **server-side geospatial computation engine**, not a traditional data tool.
 
----
-
-## 📌 What This Phase Covers
-
-You will learn how to:
-
-- Work with Image and ImageCollection structures
-- Understand bands as numerical matrices (not images)
-- Handle lazy computation in GEE
-- Filter and reduce satellite datasets
-- Manage spatial boundaries (ROI, buffer, CRS)
-- Remove clouds and noise
-- Work with spectral bands (Red, NIR, SWIR)
-- Compute NDVI as a biological proxy
-- Aggregate data spatially and temporally
-- Build full agricultural analysis pipelines
+You do not work directly with data — you define **processing instructions**, and computation happens only when triggered.
 
 ---
 
-## 🧠 Core Mental Model
+## 📌 Key Concepts
 
-Satellite data is not images — it is:
+- **GEE system**
+  - Runs on Google servers (not local machine)
+  - Works with petabyte-scale satellite datasets
+  - Uses *lazy computation* (nothing runs immediately)
 
-- **Physical measurements of reflected energy**
-- Stored as **multi-band numerical matrices**
-- Organized as **time-series collections**
-- Processed through **server-side computation pipelines**
+- **Image vs ImageCollection**
+  - Image → single multi-band snapshot
+  - ImageCollection → time-series stack of images
+  - ImageCollection must be reduced before analysis
 
-You are not analyzing pictures — you are analyzing **measured Earth systems over time**.
+- **Bands**
+  - Bands are **2D numerical matrices**, not visual colors
+  - Each band represents physical measurements (e.g., Red, NIR)
+  - Satellite image = stack of multiple matrices
+
+- **Lazy computation**
+  - Code defines a pipeline, not execution
+  - Runs only on display/export/reduction
+  - Errors appear late due to deferred execution
+
+- **ROI + Filtering**
+  - ROI defines spatial boundary
+  - `.filterBounds()` + `.filterDate()` control dataset scope
+
+- **Image structure**
+  - Each image contains:
+    - bands (spectral data)
+    - metadata (time, cloud, sensor info)
+    - projection info
+
+- **Metadata importance**
+  - Time, cloud %, and sensor info are essential for valid analysis
+  - Without metadata, interpretation is unreliable
+
+- **Visualization**
+  - RGB view is only for inspection
+  - Uses contrast stretching (min/max scaling)
+
+- **Why ImageCollections exist**
+  - Earth is dynamic (temporal system)
+  - Clouds require multiple observations
+  - Enables statistical signal recovery
 
 ---
 
-## 🗂️ Folder Structure (This Repository)
+## 🌍 Why it matters
 
-Each day contains:
+Satellite data is not an image problem — it is a **spatio-temporal measurement system**.
 
-- GEE script (JavaScript)
-- Notes (conceptual understanding)
-- Outputs (visual or processed results if needed)
+Understanding this prevents:
+- false interpretation of NDVI
+- misuse of single images
+- incorrect assumptions about crop conditions
+
+---
+
+## ⚠️ Common mistakes
+
+- Treating GEE outputs as ground truth
+- Thinking images are like photographs
+- Ignoring metadata (cloud, time, sensor angle)
+- Using ImageCollection without reduction
+- Assuming pixel values are “visual colors”
+
+---
+
+## 🎯 Takeaway
+
+GEE is not an image viewer — it is a **distributed system for processing Earth observation data through mathematical pipelines**.
