@@ -44,7 +44,7 @@ By the end of this phase, you should be able to:
 
 ---
 
-```
+
 
 Each folder contains:
 
