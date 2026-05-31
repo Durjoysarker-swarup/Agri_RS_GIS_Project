@@ -1,4 +1,4 @@
-# DAY 1 — Pixel, DN, Bit-Depth & Scaling
+# Pixel, DN, Bit-Depth & Scaling
 
 ## Core Idea
 Satellite data is not an image. It is a structured numerical measurement of reflected energy from Earth's surface. Every processing step (DN → reflectance → scaling) is required to make it scientifically meaningful.
