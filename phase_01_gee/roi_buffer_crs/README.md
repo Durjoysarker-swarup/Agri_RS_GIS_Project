@@ -1,4 +1,4 @@
-# 1. README.md (Concept Summary)
+# ROI + Buffer + CRS
 
 ## Region of Interest (ROI)
 An ROI defines the geographic boundaries of your dataset. Choosing the correct geometry structure determines the integrity of all downstream spatial workflows.
@@ -46,5 +46,3 @@ In a Geographic CRS, degrees do not represent fixed lengths. A $0.01^\circ \time
 * **High Sensitivity:** Area calculations, distance buffers, and proximity modeling.
 * **Low Sensitivity:** Pixel-wise mathematical operations (e.g., calculating NDVI ratios within a single pixel column).
 
-// Output quantitative data
-print('Calculated Planar Area (Square Meters):', exactArea);
