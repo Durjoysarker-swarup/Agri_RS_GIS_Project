@@ -67,15 +67,17 @@ This project is currently in the **data validation and time-series foundation st
 
 ---
 
-### Phase 6 — Advanced Agricultural Modeling
-⬜ Region-specific modeling (Bangladesh focus)  
-⬜ Robust validation frameworks  
+### Phase 6 — Region-Specific Agricultural Modeling (Bangladesh Focus)
+⬜ District-level crop pattern analysis  
+⬜ Climate + NDVI relationship modeling  
+⬜ Validation using field polygons  
 
 ---
 
-### Phase 7 — Final Research Output
-⬜ Research paper / portfolio project  
-⬜ End-to-end agricultural intelligence system  
+### Phase 7 — Research & Deployment
+⬜ Final predictive pipeline  
+⬜ Scientific report / paper draft  
+⬜ Portfolio-ready case study (Bangladesh agriculture)
 
 ---
 
@@ -108,5 +110,3 @@ It is about answering:
 > How reliable is satellite-derived agricultural data for real-world decision making?
 
 
-
-⬜ Phase 9 — Portfolio & Publication
