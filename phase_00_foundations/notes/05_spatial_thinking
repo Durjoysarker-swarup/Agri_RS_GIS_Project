@@ -1,0 +1,169 @@
+# Spatial Thinking (GIS + ML Connection)
+
+## Core Reality
+
+Pixels are NOT independent.
+
+- In normal ML: data points are independent rows  
+- In spatial data: data points are connected in space  
+
+This changes everything.
+
+---
+
+## Tobler’s First Law (Most Important Idea)
+
+> “Everything is related to everything else, but near things are more related than distant things.”
+
+Meaning:
+
+- Nearby pixels → similar NDVI, soil, moisture  
+- Far pixels → more different  
+
+Example (Bangladesh rice fields):
+
+- Neighboring fields often share:
+  - irrigation
+  - soil type
+  - weather conditions  
+
+So NDVI values become spatially similar (spatial autocorrelation)
+
+---
+
+## Spatial Autocorrelation
+
+What it means:
+
+- Value of one pixel depends on nearby pixels
+
+Problem in ML:
+
+- ML assumes data is random and independent  
+- But spatial data is structured  
+
+If ignored:
+- model looks highly accurate
+- but results are misleading (fake performance)
+
+---
+
+## Raster vs Vector
+
+### Raster (ML side)
+
+- Grid of pixels  
+- Each pixel = value (NDVI, reflectance)  
+- Example: satellite image, NDVI map  
+
+---
+
+### Vector (real-world side)
+
+- Points, lines, polygons  
+- Example: field boundary, farm plot  
+
+---
+
+### Key Insight
+
+You don’t predict pixels  
+You predict fields  
+
+So pixel data must be summarized into field units.
+
+---
+
+## Zonal Statistics (GIS → ML Bridge)
+
+What it does:
+
+- Converts raster → field-level values
+
+Example:
+
+From NDVI raster + field polygon:
+
+- Mean NDVI  
+- Max NDVI  
+- Min NDVI  
+- Standard deviation  
+
+---
+
+### Key Insight
+
+- Pixel-level ML → noisy and misleading  
+- Field-level ML → meaningful and usable  
+
+---
+
+## Edge Effects (Dirty Pixel Problem)
+
+Border pixels are mixed:
+
+Example:
+
+A single pixel may contain:
+
+- rice field  
+- road  
+- water  
+
+Result: NDVI becomes inaccurate  
+Model gets confused  
+
+---
+
+### Solution: Negative Buffer
+
+- Shrink boundary inward  
+- Remove edge pixels  
+
+Result:
+
+- cleaner crop signal  
+- less contamination  
+
+Tradeoff:
+
+- less area  
+- better data quality  
+
+---
+
+## CRS (Coordinate Reference System)
+
+CRS defines how Earth is mapped into coordinates.
+
+### Importance
+
+If CRS is wrong:
+
+- layers don’t align  
+- field boundary ≠ satellite data  
+
+---
+
+### Common Systems
+
+#### WGS84
+- latitude / longitude (degrees)  
+- good for global location  
+- weak for distance/area accuracy  
+
+#### UTM
+- projected system (meters)  
+- accurate for:
+  - field area
+  - distance
+  - raster alignment  
+
+---
+
+## Biggest Mistake — Random Train/Test Split
+
+Incorrect approach:
+
+```python
+train_test_split(X, y)
