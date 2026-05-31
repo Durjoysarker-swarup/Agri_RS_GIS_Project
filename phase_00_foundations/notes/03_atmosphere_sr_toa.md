@@ -13,7 +13,7 @@ Observed satellite signal is not pure surface information.
 Observed Signal =
 Surface Reflectance + Atmospheric Effects + Geometry + Noise
 
-👉 Meaning: what you see is always contaminated to some degree.
+Meaning: what you see is always contaminated to some degree.
 
 ---
 
@@ -26,7 +26,7 @@ It includes:
 - scattering (haze, dust)
 - absorption (atmospheric gases)
 
-👉 Problem:
+Problem:
 - Not suitable for precise agricultural analysis
 
 ---
@@ -54,7 +54,7 @@ Atmosphere does not affect all wavelengths equally:
 - Red → moderately affected  
 - NIR → least affected  
 
-👉 This uneven distortion is critical for interpretation.
+This uneven distortion is critical for interpretation.
 
 ---
 
@@ -70,7 +70,7 @@ Result:
 - Same crop
 - Different NDVI values
 
-👉 This can lead to false crop stress interpretation.
+This can lead to false crop stress interpretation.
 
 ---
 
@@ -118,7 +118,7 @@ Reflectance changes based on:
 Example:
 - same crop looks different in morning vs noon
 
-👉 No biological change, only geometric change.
+No biological change, only geometric change.
 
 ---
 
