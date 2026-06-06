@@ -82,9 +82,9 @@ NDVI was computed and zonal statistics were extracted per grid cell.
 ## Key Outputs
 
 ### NDVI Products
-- NDVI_A.tif
-- NDVI_B.tif
-- NDVI_C.tif
+- Classification_A.png
+- Classification_B.png
+- Classification_C.png
 
 ### Dataset
 - final_analysis_table.csv
