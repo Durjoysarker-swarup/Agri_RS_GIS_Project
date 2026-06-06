@@ -9,7 +9,7 @@ The purpose is to convert continuous satellite data into **discrete spatial deci
 
 ---
 
-## 🧭 Input Data
+## Input Data
 
 - Administrative boundary: FAO GAUL Level-2 (Sylhet District)
 - Coordinate Reference System (CRS): WGS 84 → Projected CRS (meter-based)
@@ -20,7 +20,7 @@ The purpose is to convert continuous satellite data into **discrete spatial deci
 
 ---
 
-## ⚙️ Workflow Overview
+##  Workflow Overview
 
 ### 1. Import Libraries & Data
 - Load geospatial libraries
