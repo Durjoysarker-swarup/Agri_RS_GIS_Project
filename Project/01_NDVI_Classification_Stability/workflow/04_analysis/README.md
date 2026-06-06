@@ -1,4 +1,4 @@
-# 02 — NDVI Sensitivity Analysis Pipeline (Python)
+# NDVI Sensitivity Analysis Pipeline (Python)
 
 ## Objective
 
