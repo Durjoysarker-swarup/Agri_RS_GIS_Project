@@ -57,7 +57,7 @@ The workflow is divided into four stages:
 - Exported AOI as GEE asset
 
 ### 2. Grid Generation (Python)
-- Created 100m × 100m spatial grid using GeoPandas
+- Created 200m × 200m spatial grid using GeoPandas
 - Clipped grid to AOI
 - Assigned unique Grid IDs
 
