@@ -37,8 +37,8 @@ and how these factors influence NDVI stability in smallholder agricultural syste
 
 ## Status
 
-- Project 1: In Progress
-- Project 2: Planed
+- Project 1: Done
+- Project 2: In Process
 - More projects will be added gradually
 
 ---
