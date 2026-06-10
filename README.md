@@ -92,14 +92,7 @@ This project is currently in the **data validation and time-series foundation st
 
 ---
 
-## 📁 Repository Structure
 
-- `phase_00_foundations/`
-- `phase_01_gee_core/`
-- `phase_01_5_validation_layer/`
-- `src/`
-
----
 
 ## ⚠️ Key Idea
 
