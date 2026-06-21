@@ -15,7 +15,7 @@ project/
 │   ├── 01_scale_bias_analysis.ipynb
 │   └── 02_edge_effect_analysis.ipynb
 │
-├── data/
+├── raw_data/
 │   ├── NDVI_10m.csv
 │   ├── NDVI_20m.csv
 │   ├── NDVI_30m.csv
@@ -27,8 +27,8 @@ project/
 │
 ├── outputs/
 │   ├── master_analysis.csv
-│   ├── figures/
-│   └── tables/
+│   ├── figure/
+│  
 │
 └── README.md
 ```
