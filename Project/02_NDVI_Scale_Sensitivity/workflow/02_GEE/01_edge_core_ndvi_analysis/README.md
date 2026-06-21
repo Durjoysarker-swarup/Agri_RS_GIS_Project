@@ -11,8 +11,7 @@ The workflow computes NDVI from Sentinel-2 imagery, partitions fields into core 
 ```text
 project/
 
-├── gee/
-│   └── ndvi_edge_core.js
+├── edge vs core.js
 │
 │
 ├── outputs/
