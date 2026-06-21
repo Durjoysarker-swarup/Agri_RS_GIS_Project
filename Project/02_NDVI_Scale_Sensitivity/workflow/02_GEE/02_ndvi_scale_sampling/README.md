@@ -14,8 +14,6 @@ project/
 ├── gee/
 │   └── ndvi_scale_analysis.js
 │
-├── data/
-│   └── sample_fields.shp
 │
 ├── outputs/
 │   ├── NDVI_10m.csv
