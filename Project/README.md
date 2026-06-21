@@ -38,7 +38,7 @@ and how these factors influence NDVI stability in smallholder agricultural syste
 ## Status
 
 - Project 1: Done
-- Project 2: In Process
+- Project 2: Done
 - More projects will be added gradually
 
 ---
@@ -49,5 +49,6 @@ and how these factors influence NDVI stability in smallholder agricultural syste
 - Sentinel-2 satellite data
 - NDVI analysis
 - Raster and vector geospatial processing
+- QGIS
 
 ---
