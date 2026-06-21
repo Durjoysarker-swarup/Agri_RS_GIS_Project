@@ -1,128 +1,285 @@
-# NDVI Scale Sensitivity in Smallholder Rice Fields
+# NDVI Scale Sensitivity and Edge Effects in Smallholder Agricultural Landscapes
 
-## Short description
-This subproject quantifies how NDVI (Normalized Difference Vegetation Index) reliability is affected by spatial resolution and field geometry in smallholder rice farming systems. The analysis focuses on scale mismatch, edge effects, and pixel mixing that bias field-level NDVI for small and irregularly shaped paddies.
+## Overview
 
-## Table of contents
-- Background & motivation
-- Research question & objectives
-- Data
-- Methods
-- Outputs
-- Folder structure
-- Reproducibility
-- Status
-- Authors & contact
-- License / citation
+This project investigates how spatial resolution and field geometry influence the reliability of vegetation monitoring in fragmented smallholder agricultural systems.
+
+Using Sentinel-2 imagery and NASA Harvest Fields of the World (FTW) boundaries, the study evaluates the effects of scale mismatch and edge contamination on NDVI estimates in Sylhet, Bangladesh.
+
+The objective is to identify practical field-size thresholds for reliable use of medium-resolution satellite data in smallholder landscapes.
 
 ---
 
-## Background & motivation
-Remote-sensing vegetation indices such as NDVI assume that pixels represent homogeneous land cover. In smallholder agricultural landscapes where fields are small and irregular, one satellite pixel often contains mixed-surface signals. This causes systematic bias in field-level NDVI and reduces the reliability of vegetation monitoring.
+## Research Question
 
-Understanding how NDVI behaves across spatial scales and field geometries is essential for:
-- Selecting suitable imagery for field-scale monitoring
-- Designing unbiased sampling and monitoring protocols
-- Interpreting time-series and change-detection results
+> How does NDVI reliability change when field size and spatial resolution mismatch increases in smallholder agricultural landscapes?
 
 ---
 
-## Research question & objectives
-Primary question
-- How does NDVI reliability change with field size, field shape, and spatial resolution?
+## Study Area
 
-Objectives
-- Quantify NDVI bias introduced by edge effects and pixel mixing
-- Compare NDVI derived at multiple simulated spatial resolutions (e.g., 10 m, 20 m, 30 m)
-- Relate field geometry metrics (area, perimeter, shape index) to NDVI stability
-- Identify minimum reliable field size per resolution and provide practical recommendations
+**Location:** Sylhet District, Bangladesh
 
----
+Characteristics:
 
-## Data
-- Sentinel-2 surface reflectance (or equivalent) used to derive NDVI at native resolution
-- Digitized field polygons (smallholder rice paddies) used as reference field units
-- Synthetic/resampled rasters to simulate coarser resolutions for sensitivity analysis
-
-Note: Data files and intermediate products are stored in the `data/` and `output/` folders.
+- Fragmented agricultural landscape
+- Predominantly smallholder farming systems
+- Rice-dominated cropping pattern
 
 ---
 
-## Methods (high-level)
-1. Preprocess imagery (cloud masking, atmospheric correction as required)
-2. Compute NDVI from the appropriate spectral bands
-3. Use vectorized field polygons to extract per-field NDVI statistics
-4. Separate edge and core pixels to quantify edge contamination
-5. Resample / aggregate NDVI to coarser resolutions to simulate scale effects
-6. Compute geometry metrics (area, perimeter, shape index) and correlate with NDVI bias
-7. Produce plots and tables showing NDVI stability and recommended thresholds
+## Datasets
 
-Technical stack: Google Earth Engine (for imagery and scalable processing), Python (geopandas, rasterio, numpy, matplotlib / seaborn), and additional GIS tools as needed.
+| Dataset | Resolution | Purpose |
+|---------|------------|---------|
+| Sentinel-2 Surface Reflectance | 10m, 20m, 30m | NDVI computation |
+| NASA Harvest Fields of the World | Vector | Agricultural field boundaries |
+| Sylhet Administrative Boundary | Vector | Spatial clipping |
 
----
+Study period:
 
-## Outputs
-Primary deliverables in this folder and subfolders include:
-- `data/` — raw and processed input datasets
-- `output/` — intermediate rasters, aggregated NDVI layers, and CSV/GeoPackage outputs
-- `report/` — figures, tables, and write-ups summarizing results
-- `docs/` — supplementary documentation, methods, and usage notes
-- `workflow/` — scripts and notebooks to reproduce analysis
-
-Key outputs:
-- Field geometry dataset with computed metrics
-- Edge ratio and core/core NDVI comparisons
-- NDVI at multiple spatial scales
-- Scale-sensitivity plots and reliability thresholds
+July 2024 – November 2024
 
 ---
 
-## Folder structure (this subproject)
-- README.md (this file)
-- data/
-- docs/
-- output/
-- report/
-- workflow/
+## Methodology
 
-If you want, I can add README files to each subfolder explaining the contents and how to use them.
+### Phase 0 — Data Preparation
+
+- Merge FTW tiles
+- Geometry correction (`buffer(0)`)
+- Clip to Sylhet district
+- Stratified random sampling
+
+Sample Size:
+
+200 agricultural fields
+
+Size classes:
+
+* Small (<300 m²)
+* Medium (300–1500 m²)
+* Large (1500–5000 m²)
+* Very Large (>5000 m²)
 
 ---
 
-## Reproducibility / How to run
-1. (Optional) Set up Google Earth Engine access and authenticate following GEE docs
-2. Create a Python environment and install dependencies (example):
+### Phase 1 — Geometric Analysis
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r workflow/requirements.txt
+Computed variables:
+
+* Field Area
+* Core Area
+* Edge Ratio
+* Shape Index
+* Edge Effect
+* NDVI Bias
+
+Core polygons were generated using a **2.5 m inward buffer**.
+
+Shape Index:
+
+$$
+SI=\frac{Perimeter}{2\sqrt{\pi Area}}
+$$
+
+Higher values indicate elongated or irregular fields.
+
+---
+
+### Phase 2 — Google Earth Engine Processing
+
+Steps:
+
+* Cloud masking using SCL
+* Median Sentinel-2 composite
+* NDVI calculation
+* Spatial aggregation
+
+Generated products:
+
+* NDVI 10m
+* NDVI 20m
+* NDVI 30m
+
+Extracted statistics:
+
+* Total NDVI
+* Core NDVI
+* Edge NDVI
+
+---
+
+### Phase 3 — Statistical Analysis
+
+Performed in Python.
+
+Libraries:
+
+```python
+pandas
+geopandas
+numpy
+matplotlib
+scipy
+statsmodels
 ```
 
-3. Run `workflow/run_analysis.py` (or the notebook `workflow/analysis.ipynb`) to reproduce the main figures. Adjust paths in `workflow/config.yml` if necessary.
+Analyses included:
 
-4. Output artifacts will be written to `output/` and figures to `report/`.
-
----
-
-## Status
-Planned / in progress — update this section as analysis progresses (e.g., Data prepared, Scripts ready, Results generated).
-
----
-
-## Authors & contact
-Durjoy Sarker (Durjoysarker-swarup)
-Email: (add your preferred contact)
+* Scale bias estimation
+* Edge contamination assessment
+* Pearson correlation
+* Regression analysis
+* Reliability threshold detection
 
 ---
 
-## License & citation
-Please add a license file at repository root (e.g., MIT, CC-BY) and cite the project as:
-Durjoy Sarker (2026). NDVI Scale Sensitivity in Smallholder Rice Fields. Agri_RS_GIS_Project.
+## Key Findings
+
+### Scale-induced Bias
+
+NDVI bias increases as field size decreases.
+
+Observed relationship:
+
+```text
+Field Area vs abs_bias30
+
+r = -0.18
+p < 0.05
+```
+
+Small fields exhibit greater uncertainty under 30 m aggregation.
 
 ---
 
-If you'd like, I can also:
-- Create/standardize READMEs for each subfolder (data, docs, output, report, workflow)
-- Add a `workflow/requirements.txt` and minimal `workflow/config.yml` template
-- Add badges (status, license) to the README
+### Edge Contamination
+
+Field geometry significantly affects spectral purity.
+
+Observed relationship:
+
+```text
+Shape Index vs abs_bias30
+
+r = 0.25
+p < 0.01
+```
+
+Elongated fields are more susceptible to mixed-pixel effects.
+
+---
+
+### Reliability Threshold
+
+Important thresholds identified:
+
+| Field Size | Reliability |
+|-----------|-------------|
+| <90 m² | High uncertainty |
+| ~90 m² | Transition zone |
+| >180 m² | Relatively stable |
+| >500 m² | Consistently reliable |
+
+Reliability criterion:
+
+```text
+abs_bias30 < 0.05
+```
+
+---
+
+## Repository Structure
+
+```text
+project/
+
+├── 01_Field_Preprocessing/
+├── 02_NDVI_Extraction/
+├── 03_Edge_Core_Analysis/
+├── 04_Statistical_Analysis/
+├── figures/
+├── notebooks/
+├── reports/
+├── data_sample/
+└── README.md
+```
+
+---
+
+## Figures
+
+Suggested figures:
+
+- Study Area Map
+- Field Size Distribution
+- Area vs Absolute NDVI Bias
+- Shape Index vs NDVI Bias
+- Edge vs Core NDVI Comparison
+- Bias Distribution by Size Class
+- Workflow Diagram
+
+---
+
+## Limitations
+
+Current limitations include:
+
+* Fixed 2.5 m buffering
+* AI-generated FTW boundaries
+* Single growing season
+* Single study region
+
+Future work may include:
+
+- Manual boundary validation
+- Multi-season analysis
+- Crop-specific sensitivity assessment
+- Cross-country comparisons
+
+---
+
+## Reproducibility
+
+This project is fully reproducible.
+
+Components include:
+
+- Google Earth Engine scripts
+- Python notebooks
+- Spatial preprocessing workflow
+- Statistical analysis pipeline
+
+---
+
+## Citation
+
+If you use this work, please cite:
+
+Durjoy Sarker (2026)
+
+*NDVI Scale Sensitivity and Edge Effects in Smallholder Agricultural Landscapes: A Sentinel-2 Study from Bangladesh.*
+
+Portfolio Research Project.
+
+---
+
+## Author
+
+**Durjoy Sarker**
+
+Undergraduate Student  
+Faculty of Agriculture  
+Sylhet Agricultural University  
+Bangladesh
+
+Interests:
+
+- AI in Agriculture
+- Remote Sensing
+- GIS
+- Crop Monitoring
+- Spatial Data Science
+
+---
