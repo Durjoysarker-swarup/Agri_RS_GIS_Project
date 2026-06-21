@@ -25,7 +25,7 @@ project/
 │   ├── field_metrics.csv
 │   └── field_stats.csv
 │
-├── outputs/
+├── output/
 │   ├── master_analysis.csv
 │   ├── figure/
 │  
