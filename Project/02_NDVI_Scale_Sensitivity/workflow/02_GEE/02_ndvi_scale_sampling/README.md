@@ -11,8 +11,7 @@ The analysis uses Sentinel-2 imagery to generate a baseline 10 m NDVI composite 
 ```text
 project/
 
-├── gee/
-│   └── ndvi_scale_analysis.js
+├── NDVI_extraction.js
 │
 │
 ├── outputs/
