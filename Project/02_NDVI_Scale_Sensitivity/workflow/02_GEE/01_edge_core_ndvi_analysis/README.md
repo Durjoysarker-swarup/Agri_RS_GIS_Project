@@ -14,12 +14,6 @@ project/
 ├── gee/
 │   └── ndvi_edge_core.js
 │
-├── data/
-│   ├── sample_fields.shp
-│   ├── sample_fields.dbf
-│   ├── sample_fields.shx
-│   ├── sample_fields.prj
-│   └── sample_fields.cpg
 │
 ├── outputs/
 │   ├── NDVI_total.csv
