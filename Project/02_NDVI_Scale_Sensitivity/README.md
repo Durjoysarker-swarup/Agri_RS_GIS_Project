@@ -121,8 +121,6 @@ pandas
 geopandas
 numpy
 matplotlib
-scipy
-statsmodels
 ```
 
 Analyses included:
@@ -130,7 +128,6 @@ Analyses included:
 * Scale bias estimation
 * Edge contamination assessment
 * Pearson correlation
-* Regression analysis
 * Reliability threshold detection
 
 ---
@@ -190,27 +187,8 @@ abs_bias30 < 0.05
 
 ---
 
-## Repository Structure
-
-```text
-project/
-
-├── 01_Field_Preprocessing/
-├── 02_NDVI_Extraction/
-├── 03_Edge_Core_Analysis/
-├── 04_Statistical_Analysis/
-├── figures/
-├── notebooks/
-├── reports/
-├── data_sample/
-└── README.md
-```
-
----
 
 ## Figures
-
-Suggested figures:
 
 - Study Area Map
 - Field Size Distribution
@@ -253,17 +231,6 @@ Components include:
 
 ---
 
-## Citation
-
-If you use this work, please cite:
-
-Durjoy Sarker (2026)
-
-*NDVI Scale Sensitivity and Edge Effects in Smallholder Agricultural Landscapes: A Sentinel-2 Study from Bangladesh.*
-
-Portfolio Research Project.
-
----
 
 ## Author
 
