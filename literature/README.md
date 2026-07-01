@@ -45,5 +45,13 @@ Each paper note answers a few simple questions:
 - **GitHub** is used only for my learning notes and reflections.
 
 ---
+## 📖 Reading Progress
 
+| # | Paper | Year | Status | Main Topic |
+|---:|-------|:----:|:------:|------------|
+| 1 | Meroni et al. | 2021 | ✅ Completed | Phenology | 
+| 2 | | | ⏳ Planned | | |
+
+
+---
 > **My goal is to understand research, not to collect papers.**
