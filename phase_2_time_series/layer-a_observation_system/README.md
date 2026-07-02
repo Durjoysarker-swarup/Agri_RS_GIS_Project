@@ -8,7 +8,7 @@ Understanding this layer is essential before moving on to time-series reconstruc
 
 | # | Topic | Description |
 |---|---|---|
-| [01](./temporal-signal-notes.md) | What is a Temporal Signal? | Introduces the core idea that nature is continuous while satellite observations are discrete, and defines temporal signal, temporal resolution, revisit frequency, and sampling frequency. |
+| [01](./01-Temporal-Signal.md) | What is a Temporal Signal? | Introduces the core idea that nature is continuous while satellite observations are discrete, and defines temporal signal, temporal resolution, revisit frequency, and sampling frequency. |
 | [02](./observation-vs-reality-notes.md) | Observation vs Reality | Traces the full journey of light from the Sun to an NDVI value, showing why a satellite never measures vegetation directly and why observed NDVI ≠ true NDVI. |
 | [03](./noise-in-satellite-time-series-notes.md) | Noise in Satellite Time Series | Breaks down the sources of noise in NDVI signals, explains spikes, and warns against blindly removing them without investigation. |
 | [04](./clouds-monsoon-data-collapse-notes.md) | Clouds, Monsoon & Data Collapse | Explains why optical satellites can't see through clouds, what cloud persistence and data collapse look like in practice (e.g. Sylhet monsoon), and the limits of cloud masking. |
