@@ -1,4 +1,4 @@
-# 1.6 — Preprocessing Pipeline Sensitivity
+# Preprocessing Pipeline Sensitivity
 
 The NDVI you analyze is not a direct measurement from the satellite. It is the result of a sequence of processing decisions.
 
