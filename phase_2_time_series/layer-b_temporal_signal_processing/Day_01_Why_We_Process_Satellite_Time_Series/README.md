@@ -1,4 +1,4 @@
-# 2.1 — Process Satellite Time Series
+Process Satellite Time Series
 
 ## Why Can't We Analyze Raw NDVI Directly?
 
