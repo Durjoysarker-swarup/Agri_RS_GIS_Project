@@ -89,7 +89,7 @@ Layer-B_temporal_signal_processing/
 ├── Day_01_Why_We_Process_Satellite_Time_Series/
 │   ├── README.md
 │   ├── NDVI_Signal_Exploration.ipynb
-│   └── outputs/
+│   └── Report.md
 │
 ├── Day_02_Smoothing_Methods/
 │   ├── README.md
