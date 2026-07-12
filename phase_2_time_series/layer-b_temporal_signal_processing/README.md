@@ -99,7 +99,7 @@ Layer-B_temporal_signal_processing/
 ├── Day_03_Choosing_Smoothing_Parameters/
 │   ├── README.md
 │   ├── Smoothing_Parameter_Sensitivity.ipynb
-│   └── outputs/
+│   └── Report.md
 │
 ├── Day_04_Interpolation_and_Gap_Filling/
 │   ├── README.md
