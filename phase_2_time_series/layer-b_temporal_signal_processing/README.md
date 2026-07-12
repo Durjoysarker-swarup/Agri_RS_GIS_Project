@@ -94,7 +94,7 @@ Layer-B_temporal_signal_processing/
 ├── Day_02_Smoothing_Methods/
 │   ├── README.md
 │   ├── NDVI_Smoothing_Comparison.ipynb
-│   └── outputs/
+│   └── Report.md
 │
 ├── Day_03_Choosing_Smoothing_Parameters/
 │   ├── README.md
