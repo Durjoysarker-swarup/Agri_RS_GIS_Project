@@ -116,7 +116,7 @@ Layer-B_temporal_signal_processing/
 ├── Day_06_Change_Detection/
 │   ├── README.md
 │   ├── NDVI_Change_Detection.ipynb
-│   └── outputs/
+│   └── Report.md
 │
 └── Day_07_Uncertainty_in_Temporal_Analysis/
     ├── README.md
