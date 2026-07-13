@@ -78,7 +78,8 @@ RMSE • MAE
 
 ### Error Growth
 
-> **Placeholder:** Insert the **RMSE vs Gap Length** figure.
+<img width="910" height="588" alt="image" src="https://github.com/user-attachments/assets/c0ce70a5-6571-417c-90e8-909685ce74c4" />
+
 
 
 
