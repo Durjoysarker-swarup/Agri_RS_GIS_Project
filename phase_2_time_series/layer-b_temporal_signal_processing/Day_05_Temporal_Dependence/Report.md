@@ -96,26 +96,13 @@ Autocorrelation (lags 1–10)
 
 ### Autocorrelation by Lag
 
-> **Placeholder:** Insert the **Autocorrelation by Lag** line plot.
+<img width="918" height="585" alt="image" src="https://github.com/user-attachments/assets/23995427-a0d2-429b-b140-b5eee8d0c568" />
 
-```text
-images/
-└── autocorrelation_by_lag.png
-```
-
-```markdown
-![Autocorrelation by Lag](images/autocorrelation_by_lag.png)
-```
-
----
 
 ### ACF & PACF Plots
 
-> **Placeholder:** Insert the combined **ACF/PACF** figure (Raw NDVI vs Smoothed NDVI).
+<img width="1175" height="652" alt="image" src="https://github.com/user-attachments/assets/8153e5dd-8863-4bcc-9bb4-8cecdd0179cb" />
 
-```markdown
-![ACF and PACF Comparison](images/acf_pacf_comparison.png)
-```
 
 **Interpretation guide:**
 - Bar outside the shaded confidence band → likely a statistically significant lag.
@@ -125,11 +112,8 @@ images/
 
 ### Seasonal Decomposition
 
-> **Placeholder:** Insert the **Trend / Seasonal / Residual** decomposition figure for the smoothed (AWS) series.
+<img width="1337" height="665" alt="image" src="https://github.com/user-attachments/assets/4fc81320-499c-4c6f-87b3-aae795bf6a9e" />
 
-```markdown
-![Seasonal Decomposition](images/seasonal_decomposition.png)
-```
 
 ---
 
@@ -156,23 +140,6 @@ Key observations from the experiment include:
 - ACF and PACF plots indicate the strongest direct dependence is concentrated at low lags, with diminishing significance at higher lags.
 - Seasonal decomposition (period = 12, additive) successfully separated the smoothed NDVI series into clear trend, seasonal, and residual components.
 - The trend component shows repeated rise-and-fall cycles rather than a single monotonic trend, consistent with recurring vegetation cycles across multiple years.
-
----
-
-## Repository Structure
-
-```text
-Temporal-Dependence-Analysis/
-│
-├── 05_Temporal_Dependence_Analysis.ipynb
-├── REPORT.md
-├── data/
-├── figures/
-│   ├── autocorrelation_by_lag.png
-│   ├── acf_pacf_comparison.png
-│   └── seasonal_decomposition.png
-└── README.md
-```
 
 ---
 
