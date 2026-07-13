@@ -103,8 +103,10 @@ Layer-B_temporal_signal_processing/
 │
 ├── Day_04_Interpolation_and_Gap_Filling/
 │   ├── README.md
-│   ├── NDVI_Interpolation_Analysis.ipynb
-│   └── outputs/
+│   ├── 01_NDVI_Interpolation_Analysis.ipynb
+|   ├── 02_Temporal_Gap_Sensitivity_Analysis.ipynb
+├   ├── Report_NDVI_Interpolation_Analysis.md
+│   └── Report_Temporal_Gap_Sensitivity_Analysis.md
 │
 ├── Day_05_Temporal_Dependence/
 │   ├── README.md
