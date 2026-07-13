@@ -111,7 +111,7 @@ Layer-B_temporal_signal_processing/
 ├── Day_05_Temporal_Dependence/
 │   ├── README.md
 │   ├── Temporal_Dependence_Analysis.ipynb
-│   └── outputs/
+│   └── Report.md
 │
 ├── Day_06_Change_Detection/
 │   ├── README.md
