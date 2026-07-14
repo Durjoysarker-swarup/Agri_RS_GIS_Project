@@ -1,4 +1,4 @@
-# Agri_RS_AI_Project
+# Agri_RS_GIS_Project
 
 A research-driven project integrating:
 
