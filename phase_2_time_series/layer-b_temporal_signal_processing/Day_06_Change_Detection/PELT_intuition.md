@@ -34,7 +34,7 @@ Segment A → Segment B
 
 ---
 
-## L2 Cost (model=12)
+## L2 Cost (model=l2)
 
 Suppose segment:
 
