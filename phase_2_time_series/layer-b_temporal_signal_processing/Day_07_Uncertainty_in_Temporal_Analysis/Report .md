@@ -126,8 +126,6 @@ Mean Curve + 95% Simulation Band
 
 ### Monte Carlo Realizations of NDVI
 
-> **Placeholder:** Insert the **Monte Carlo Realizations** figure (100 raw simulated curves + observed NDVI overlay).
-
 <img width="1306" height="577" alt="image" src="https://github.com/user-attachments/assets/1bc96c35-2dda-4554-b297-20e4ccb6e230" />
 
 
@@ -148,7 +146,8 @@ Mean Curve + 95% Simulation Band
 
 ### Mean NDVI Curve with 95% Simulation Band
 
-<img width="1300" height="572" alt="image" src="https://github.com/user-attachments/assets/f1568fea-b8c5-4758-80bf-fc891965a0f5" />
+<img width="1313" height="591" alt="image" src="https://github.com/user-attachments/assets/57cc82c7-df46-4f2f-8d43-42b12fe573f1" />
+
 
 
 ---
@@ -176,24 +175,6 @@ Key observations from the experiment include:
 - **AUC = 35.34 (95% CI: 35.05–35.61)**.
 - Peak Date was largely consistent across simulations (~2025-10-20) but showed occasional divergence, highlighting that timing-based features carry more positional uncertainty than magnitude-based features.
 - Reporting features as point estimates with confidence intervals — rather than single fixed values — provides a substantially more transparent and reproducible summary of the underlying vegetation signal.
-
----
-
-## Repository Structure
-
-```text
-NDVI-Uncertainty-Analysis/
-│
-├── 07_NDVI_Uncertainty_Analysis.ipynb
-├── REPORT.md
-├── data/
-├── figures/
-│   ├── monte_carlo_realizations.png
-│   ├── first_five_smoothed_realizations.png
-│   ├── peak_ndvi_distribution.png
-│   └── mean_ndvi_uncertainty_band.png
-└── README.md
-```
 
 ---
 
