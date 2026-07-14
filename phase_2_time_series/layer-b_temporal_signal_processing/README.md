@@ -122,7 +122,7 @@ Layer-B_temporal_signal_processing/
 └── Day_07_Uncertainty_in_Temporal_Analysis/
     ├── README.md
     ├── NDVI_Uncertainty_Analysis.ipynb
-    └── outputs/
+    └── Report.md
 ```
 
 ---
