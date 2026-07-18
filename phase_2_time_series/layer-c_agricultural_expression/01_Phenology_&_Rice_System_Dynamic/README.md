@@ -1,6 +1,8 @@
 # Layer 3 — Phenology & Biological Interpretation
 
-This folder covers how satellite-derived vegetation signals connect to real crop biology — from the fundamentals of phenology and crop calendars, through interpreting NDVI curves and vegetation indices, to extracting and validating phenological metrics and detecting meaningful shifts in crop timing.
+This layer focuses on interpreting satellite vegetation time series from a biological perspective. After learning how observations are acquired and processed in the previous layers, the emphasis now shifts to understanding how crop growth, management, and environmental conditions shape NDVI/EVI time series.
+
+The goal is not simply to describe vegetation curves, but to interpret them scientifically by linking spectral signals to crop physiology, phenology, and the underlying biological and environmental processes that generate them.
 
 This layer builds directly on the observation and preprocessing concepts covered earlier (Layer A and Layer 2), and shifts the focus from *"is this signal trustworthy?"* to *"what does this signal mean biologically, and how do I prove it?"*
 
@@ -21,8 +23,15 @@ This layer builds directly on the observation and preprocessing concepts covered
 - **NDVI is a proxy, not a direct measurement** — every curve shape must be traced back to an underlying biological process (LAI, chlorophyll, canopy closure) before it's interpreted.
 - **Time gives meaning** — the same NDVI value can represent different growth stages or seasons depending on when it was observed and the local crop calendar.
 - **Correlation is not causation** — sharp NDVI changes have many possible explanations (harvest, flood, disease, cloud contamination), and causal claims require supporting evidence, not just pattern matching.
-- **Metrics require validation** — phenological metrics (SOS, POS, EOS) are estimates dependent on extraction method and data quality, and any detected shift should be checked against climate, management, and data-quality evidence before being called "real."
+Phenological metrics are estimates, not facts — SOS, POS, EOS and related metrics depend on the extraction method, preprocessing choices, and data quality. Any detected shift should be evaluated against climate, management, and observational evidence before drawing biological conclusions.
 
 ## Related
 
-Builds on preprocessing and uncertainty concepts from the earlier notes (smoothing, gap-filling, temporal dependence, change detection). Code implementations and worked examples are referenced in `RESAMPLING TIME SERIES.ipynb`.
+This layer builds directly on the observation system and temporal signal processing concepts introduced in the previous layers, including cloud contamination, smoothing, interpolation, temporal dependence, and uncertainty analysis. The biological interpretations presented here form the conceptual foundation for the next stages of the roadmap:
+
+- **Week 4 — Anomaly & Stress Detection**
+- **Week 5 — Validation, Uncertainty & Research Thinking**
+
+
+
+> **Core takeaway:** A vegetation index is only the starting point. Scientific remote sensing requires connecting spectral observations to biological processes, quantifying phenology, and interpreting changes using evidence rather than assumptions.
