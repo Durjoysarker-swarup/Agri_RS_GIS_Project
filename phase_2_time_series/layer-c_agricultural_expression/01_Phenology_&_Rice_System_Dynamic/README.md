@@ -23,6 +23,8 @@ This layer builds directly on the observation and preprocessing concepts covered
 - **NDVI is a proxy, not a direct measurement** — every curve shape must be traced back to an underlying biological process (LAI, chlorophyll, canopy closure) before it's interpreted.
 - **Time gives meaning** — the same NDVI value can represent different growth stages or seasons depending on when it was observed and the local crop calendar.
 - **Correlation is not causation** — sharp NDVI changes have many possible explanations (harvest, flood, disease, cloud contamination), and causal claims require supporting evidence, not just pattern matching.
+
+
 Phenological metrics are estimates, not facts — SOS, POS, EOS and related metrics depend on the extraction method, preprocessing choices, and data quality. Any detected shift should be evaluated against climate, management, and observational evidence before drawing biological conclusions.
 
 ## Related
