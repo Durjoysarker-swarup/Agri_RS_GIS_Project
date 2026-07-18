@@ -11,12 +11,12 @@ This layer builds directly on the observation and preprocessing concepts covered
 | # | Topic | Description |
 |---|---|---|
 | [3.1](./01_Phenology_Fundamentals.md) | Phenology Fundamentals | Introduces phenology as the study of biological event timing, the Bangladesh rice crop calendar (Aus, Aman, Boro), the three major rice growth stages, and the biological drivers (LAI, biomass, chlorophyll, canopy closure) behind NDVI change. |
-| [3.2](./ndvi-curves-biological-signals-notes.md) | NDVI Curves as Biological Signals | Walks through the full rice growth cycle stage-by-stage (land prep → flooding → transplanting → tillering → heading → senescence → harvest) and how each stage shows up in the NDVI curve, plus common misconceptions about NDVI and yield. |
-| [3.3](./bangladesh-multi-season-rice-logic-notes.md) | Bangladesh Multi-Season Rice Logic | Explains why Bangladesh often shows multiple NDVI peaks per year, compares Boro/Aus/Aman seasons, contrasts NDVI vs EVI saturation behavior, and introduces cropping intensity. |
-| [3.4](./causal-thinking-notes.md) | Causal Thinking: Why Patterns Exist | Distinguishes observation from cause, introduces response lag, rain-fed vs irrigated decoupling, management-driven NDVI changes, and confounding variables that produce similar-looking patterns from different causes. |
-| [3.5](./measurement-limitations-ndvi-saturation-notes.md) | Measurement Limitations: NDVI, Saturation & Alternative Indices | Explains why NDVI saturates at high canopy density, and compares NDVI, EVI, and SAVI to show when each index is most appropriate. |
-| [3.6](./phenological-metrics-notes.md) | Phenological Metrics | Defines core phenological metrics (SOS, POS, EOS, LOS, green-up rate, senescence rate) and compares three extraction methods: threshold, derivative, and curve fitting. |
-| [3.7](./phenological-shift-analysis-notes.md) | Phenological Shift Analysis | Covers how to compare phenology across years, regions, or management systems, what can shift and why, and a workflow for distinguishing real biological shifts from data artifacts. |
+| [3.2](./02_NDVI_Curves_as_Biological_Signals.md) | NDVI Curves as Biological Signals | Walks through the full rice growth cycle stage-by-stage (land prep → flooding → transplanting → tillering → heading → senescence → harvest) and how each stage shows up in the NDVI curve, plus common misconceptions about NDVI and yield. |
+| [3.3](./03_Bangladesh_Multi-Season_Rice_Logic.md) | Bangladesh Multi-Season Rice Logic | Explains why Bangladesh often shows multiple NDVI peaks per year, compares Boro/Aus/Aman seasons, contrasts NDVI vs EVI saturation behavior, and introduces cropping intensity. |
+| [3.4](./04_Causal_Thinking_Why_Patterns_Exist.md) | Causal Thinking: Why Patterns Exist | Distinguishes observation from cause, introduces response lag, rain-fed vs irrigated decoupling, management-driven NDVI changes, and confounding variables that produce similar-looking patterns from different causes. |
+| [3.5](./05_Measurement_Limitations.md) | Measurement Limitations: NDVI, Saturation & Alternative Indices | Explains why NDVI saturates at high canopy density, and compares NDVI, EVI, and SAVI to show when each index is most appropriate. |
+| [3.6](./06_Phenological_Metrics.md) | Phenological Metrics | Defines core phenological metrics (SOS, POS, EOS, LOS, green-up rate, senescence rate) and compares three extraction methods: threshold, derivative, and curve fitting. |
+| [3.7](./07_Phenological_Shift_Analysis.md) | Phenological Shift Analysis | Covers how to compare phenology across years, regions, or management systems, what can shift and why, and a workflow for distinguishing real biological shifts from data artifacts. |
 
 ## Key Themes
 
