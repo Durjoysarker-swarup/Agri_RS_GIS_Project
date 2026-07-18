@@ -10,7 +10,7 @@ This layer builds directly on the observation and preprocessing concepts covered
 
 | # | Topic | Description |
 |---|---|---|
-| [3.1](./phenology-fundamentals-notes.md) | Phenology Fundamentals | Introduces phenology as the study of biological event timing, the Bangladesh rice crop calendar (Aus, Aman, Boro), the three major rice growth stages, and the biological drivers (LAI, biomass, chlorophyll, canopy closure) behind NDVI change. |
+| [3.1](./01_Phenology_Fundamentals.md) | Phenology Fundamentals | Introduces phenology as the study of biological event timing, the Bangladesh rice crop calendar (Aus, Aman, Boro), the three major rice growth stages, and the biological drivers (LAI, biomass, chlorophyll, canopy closure) behind NDVI change. |
 | [3.2](./ndvi-curves-biological-signals-notes.md) | NDVI Curves as Biological Signals | Walks through the full rice growth cycle stage-by-stage (land prep → flooding → transplanting → tillering → heading → senescence → harvest) and how each stage shows up in the NDVI curve, plus common misconceptions about NDVI and yield. |
 | [3.3](./bangladesh-multi-season-rice-logic-notes.md) | Bangladesh Multi-Season Rice Logic | Explains why Bangladesh often shows multiple NDVI peaks per year, compares Boro/Aus/Aman seasons, contrasts NDVI vs EVI saturation behavior, and introduces cropping intensity. |
 | [3.4](./causal-thinking-notes.md) | Causal Thinking: Why Patterns Exist | Distinguishes observation from cause, introduces response lag, rain-fed vs irrigated decoupling, management-driven NDVI changes, and confounding variables that produce similar-looking patterns from different causes. |
