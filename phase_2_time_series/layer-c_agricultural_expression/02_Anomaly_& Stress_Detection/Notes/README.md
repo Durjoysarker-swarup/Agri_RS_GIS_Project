@@ -6,13 +6,13 @@ This repository contains personal study notes on detecting and interpreting NDVI
 
 | Section | Title | File |
 |---------|-------|------|
-| 4.1 | Anomaly | [4.1-Anomaly.md](./01_Anomaly.md) |
-| 4.2 | Defining the Baseline | [4.2-Defining-the-Baseline.md](./02_Defining_the_Baseline.md) |
-| 4.3 | Detecting NDVI Anomalies | [4.3-Detecting-NDVI-Anomalies.md](./03_Detecting_NDVI_Anomalies.md) |
-| 4.4 | Magnitude, Duration & Timing | [4.4-Magnitude-Duration-Timing.md](./04_Magnitude_Duration_&_Timing.md) |
-| 4.5 | Change Point Detection | [4.5-Change-Point-Detection.md](./05_Change_Point_Detection.md) |
-| 4.6 | From Anomaly to Hypothesis | [4.6-From-Anomaly-to-Hypothesis.md](./06_Anomaly_to_Hypothesis.md) |
-| 4.7 | Anomaly Interpretation Workflow | [4.7-Anomaly-Interpretation-Workflow.md](./07_Anomaly_Interpretation_Workflow.md) |
+| 4.1 | Anomaly | [01_Anomaly.md](./01_Anomaly.md) |
+| 4.2 | Defining the Baseline | [02_Defining_the_Baseline.md](./02_Defining_the_Baseline.md) |
+| 4.3 | Detecting NDVI Anomalies | [03_Detecting_NDVI_Anomalies.md](./03_Detecting_NDVI_Anomalies.md) |
+| 4.4 | Magnitude, Duration & Timing | [04_Magnitude_Duration_&_Timing.md](./04_Magnitude_Duration_&_Timing.md) |
+| 4.5 | Change Point Detection | [05_Change_Point_Detection.md](./05_Change_Point_Detection.md) |
+| 4.6 | From Anomaly to Hypothesis | [06_Anomaly_to_Hypothesis.md](./06_Anomaly_to_Hypothesis.md) |
+| 4.7 | Anomaly Interpretation Workflow | [07_Anomaly_Interpretation_Workflow.md](./07_Anomaly_Interpretation_Workflow.md) |
 
 ## Overview
 
