@@ -8,13 +8,13 @@ This repository documents the study and practical implementation of a workflow f
 .
 ├── Notes/
 │   ├── README.md
-│   ├── 4.1-Anomaly.md
-│   ├── 4.2-Defining-the-Baseline.md
-│   ├── 4.3-Detecting-NDVI-Anomalies.md
-│   ├── 4.4-Magnitude-Duration-Timing.md
-│   ├── 4.5-Change-Point-Detection.md
-│   ├── 4.6-From-Anomaly-to-Hypothesis.md
-│   └── 4.7-Anomaly-Interpretation-Workflow.md
+│   ├── 01_Anomaly.md
+│   ├── 02_Defining_the_Baseline.md
+│   ├── 03_Detecting_NDVI_Anomalies.md
+│   ├── 04_Magnitude_Duration_Timing.md
+│   ├── 05_Change_Point_Detection.md
+│   ├── 06_Anomaly_to_Hypothesis.md
+│   └── 07_Anomaly_Interpretation_Workflow.md
 │
 └── Implementation/
     ├── README.md
@@ -31,7 +31,7 @@ This repository documents the study and practical implementation of a workflow f
 
 ### 📓 [Notes](./Notes/README.md)
 
-Conceptual study notes (sections 4.1–4.7) covering:
+Conceptual study notes (sections 01–07) covering:
 - What an anomaly is, and how it differs from noise, an outlier, and stress
 - Types of baselines and their assumptions
 - Patterns anomalies can take (single-date, persistent, gradual, abrupt)
