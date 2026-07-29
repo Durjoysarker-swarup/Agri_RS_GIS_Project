@@ -11,7 +11,7 @@ This repository documents the study and practical implementation of a workflow f
 │   ├── 01_Anomaly.md
 │   ├── 02_Defining_the_Baseline.md
 │   ├── 03_Detecting_NDVI_Anomalies.md
-│   ├── 04_Magnitude_Duration_Timing.md
+│   ├── 04_Magnitude_Duration_&_Timing.md
 │   ├── 05_Change_Point_Detection.md
 │   ├── 06_Anomaly_to_Hypothesis.md
 │   └── 07_Anomaly_Interpretation_Workflow.md
