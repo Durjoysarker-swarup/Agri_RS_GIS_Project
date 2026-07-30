@@ -6,12 +6,12 @@ This folder contains study notes (sections 5.1–5.6) on the practical and metho
 
 | Section | Title | File |
 |---------|-------|------|
-| 5.1 | Pure Pixel Problem & Spatial Representativeness | [5.1-Pure-Pixel-Problem-Spatial-Representativeness.md](./01_Pure_Pixel_Problem_and_Spatial_Representativeness.md) |
-| 5.2 | Ground Truth Mismatch & Label Noise | [5.2-Ground-Truth-Mismatch-Label-Noise.md](./02_Ground_Truth_Mismatch_and_Label_Noise.md) |
-| 5.3 | Spatial vs Temporal Validation | [5.3-Spatial-vs-Temporal-Validation.md](./03_Spatial_vs_Temporal_Validation.md) |
-| 5.4 | Cross-Dataset Validation & Scale Mismatch | [5.4-Cross-Dataset-Validation-Scale-Mismatch.md](./04_Cross-Dataset_Validation_and_Scale_Mismatch.md) |
-| 5.5 | Error Analysis & Uncertainty Reporting | [5.5-Error-Analysis-Uncertainty-Reporting.md](./05_Error_Analysis_and_Uncertainty_Reporting.md) |
-| 5.6 | Feature Reliability & Temporal Data Leakage | [5.6-Feature-Reliability-Temporal-Data-Leakage.md](./06_Feature_Reliability_and_Temporal_Data_Leakage.md) |
+| 5.1 | Pure Pixel Problem & Spatial Representativeness | [01_Pure_Pixel_Problem_and_Spatial_Representativeness.md](./01_Pure_Pixel_Problem_and_Spatial_Representativeness.md) |
+| 5.2 | Ground Truth Mismatch & Label Noise | [02_Ground_Truth_Mismatch_and_Label_Noise.md](./02_Ground_Truth_Mismatch_and_Label_Noise.md) |
+| 5.3 | Spatial vs Temporal Validation | [03_Spatial_vs_Temporal_Validation.md](./03_Spatial_vs_Temporal_Validation.md) |
+| 5.4 | Cross-Dataset Validation & Scale Mismatch | [04_Cross-Dataset_Validation_and_Scale_Mismatch.md](./04_Cross-Dataset_Validation_and_Scale_Mismatch.md) |
+| 5.5 | Error Analysis & Uncertainty Reporting | [05_Error_Analysis_and_Uncertainty_Reporting.md](./05_Error_Analysis_and_Uncertainty_Reporting.md) |
+| 5.6 | Feature Reliability & Temporal Data Leakage | [06_Feature_Reliability_and_Temporal_Data_Leakage.md](./06_Feature_Reliability_and_Temporal_Data_Leakage.md) |
 
 ## Overview
 
