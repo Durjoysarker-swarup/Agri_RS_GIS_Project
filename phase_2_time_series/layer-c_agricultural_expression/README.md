@@ -18,7 +18,7 @@ Each subfolder has its own `README.md` with a full file-by-file breakdown.
 
 ## Folders
 
-### 🌾 [Phenology & Biological Interpretation](./01_Phenology_&_Rice_System_Dynamic/README.md)
+### 🌾 Phenology & Biological Interpretation
 
 Interprets satellite vegetation time series from a biological perspective — linking spectral signals to crop physiology, growth stages, and the environmental processes that generate them.
 
@@ -31,8 +31,7 @@ Covers:
 - Core phenological metrics (SOS, POS, EOS, LOS) and extraction methods
 - Comparing phenology across years/regions and separating real shifts from data artifacts
 
-### 📈 [NDVI Anomaly Detection & Interpretation](./02_Anomaly_& Stress_Detection/README.md)
-
+### 📈 NDVI Anomaly Detection & Interpretation
 Builds on the phenological foundation to detect and interpret anomalies in NDVI time series, then applies the workflow to a real dataset.
 
 Covers:
@@ -44,7 +43,7 @@ Covers:
 - Turning anomalies into testable hypotheses
 - A hands-on notebook applying the full workflow to 2020–2024 NDVI data
 
-### 🔍 [Data Quality, Validation & Reliability](./03_Validation_Uncertainty_and_ Research_Thinking/README.md)
+### 🔍 Data Quality, Validation & Reliability
 
 Steps back to ask whether the observations, labels, and models used in the previous two folders can actually be trusted.
 
