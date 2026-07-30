@@ -31,6 +31,7 @@ Covers:
 - Core phenological metrics (SOS, POS, EOS, LOS) and extraction methods
 - Comparing phenology across years/regions and separating real shifts from data artifacts
 
+### 🌾 [NDVI Anomaly Detection & Interpretation](./02_Anomaly_& Stress_Detection/README.md)
 ### 📈 [NDVI Anomaly Detection & Interpretation](./02_Anomaly_& Stress_Detection/README.md)
 
 Builds on the phenological foundation to detect and interpret anomalies in NDVI time series, then applies the workflow to a real dataset.
