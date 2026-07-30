@@ -1,4 +1,4 @@
-# Layer 3 — Phenology & Biological Interpretation
+# Phenology & Biological Interpretation
 
 This layer focuses on interpreting satellite vegetation time series from a biological perspective. After learning how observations are acquired and processed in the previous layers, the emphasis now shifts to understanding how crop growth, management, and environmental conditions shape NDVI/EVI time series.
 
