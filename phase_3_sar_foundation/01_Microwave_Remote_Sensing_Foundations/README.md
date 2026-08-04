@@ -4,22 +4,6 @@ A structured, day-by-day set of study notes covering the foundational concepts o
 
 This repository documents a self-guided learning path built from first principles — starting with the electromagnetic spectrum and active vs. passive sensing, and progressing through SAR image formation, radar geometry, surface interaction mechanisms, and dielectric theory.
 
----
-
-## 📁 Repository Structure
-
-```
-01_Microwave_Remote_Sensing_Foundations/
-├── 1.1-introduction-microwave-remote-sensing-notes.md
-├── 1.2-active-vs-passive-sensors-notes.md
-├── 1.3-how-radar-images-are-formed-notes.md
-├── 1.4-radar-geometry-notes.md
-├── 1.5-microwave-interaction-with-objects.md
-├── 1.6-dielectric-properties.md
-└── README.md
-```
-
-> File names above reflect the recommended naming convention. Adjust to match your actual committed file names if they differ.
 
 ---
 
@@ -28,11 +12,11 @@ This repository documents a self-guided learning path built from first principle
 | Day | Topic | File | Core Question |
 |---|---|---|---|
 | 1 | Introduction to Microwave Remote Sensing | [`1.1-introduction-microwave-remote-sensing-notes.md`](./01_Introduction_to_Microwave_Remote_Sensing.md) | What is the electromagnetic spectrum, and why does radar use microwaves instead of visible light? |
-| 2 | Active vs. Passive Sensors | [`1.2-active-vs-passive-sensors-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.2-active-vs-passive-sensors-notes.md) | How does a sensor that creates its own energy (radar) differ from one that relies on the Sun (optical)? |
-| 3 | How Radar Images Are Formed | [`1.3-how-radar-images-are-formed-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.3-how-radar-images-are-formed-notes.md) | How do radar pulses, backscatter, range, and azimuth combine to build a SAR image? |
-| 4 | Radar Geometry | [`1.4-radar-geometry-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.4-radar-geometry-notes.md) | What does the radar actually "see" from orbit, and how does terrain distort that view (foreshortening, layover, shadow)? |
-| 5 | Microwave Interaction with Objects | [`1.5-microwave-interaction-with-objects.md`](./01_Microwave_Remote_Sensing_Foundations/1.5-microwave-interaction-with-objects.md) | What happens when a microwave pulse reaches a surface — reflection, absorption, transmission, or scattering? |
-| 6 | Dielectric Properties | [`1.6-dielectric-properties.md`](./01_Microwave_Remote_Sensing_Foundations/1.6-dielectric-properties.md) | Why does water content so strongly control how soil and vegetation respond to radar? |
+| 2 | Active vs. Passive Sensors | [`1.2-active-vs-passive-sensors-notes.md`](./02_Active_vs_Passive_Sensors.md) | How does a sensor that creates its own energy (radar) differ from one that relies on the Sun (optical)? |
+| 3 | How Radar Images Are Formed | [`1.3-how-radar-images-are-formed-notes.md`](./03_How_Radar_Images_Are_Formed.md) | How do radar pulses, backscatter, range, and azimuth combine to build a SAR image? |
+| 4 | Radar Geometry | [`1.4-radar-geometry-notes.md`](./04_Radar_Geometry.md) | What does the radar actually "see" from orbit, and how does terrain distort that view (foreshortening, layover, shadow)? |
+| 5 | Microwave Interaction with Objects | [`1.5-microwave-interaction-with-objects.md`](./05_Microwave_Interaction_With_Objects.md) | What happens when a microwave pulse reaches a surface — reflection, absorption, transmission, or scattering? |
+| 6 | Dielectric Properties | [`1.6-dielectric-properties.md`](./06_Dielectric_Properties.md) | Why does water content so strongly control how soil and vegetation respond to radar? |
 
 ---
 
@@ -87,9 +71,3 @@ Each note explicitly pushes back on an oversimplification commonly seen in intro
 ## 📌 Status
 
 This is an active, evolving learning log. Additional modules (e.g., scattering mechanisms, polarimetry, time-series analysis for rice monitoring) will be added as new folders following the same `0N_Topic_Name/` convention.
-
----
-
-## 📄 License
-
-Add your preferred license here (e.g., MIT, CC-BY-4.0) if you intend this repository to be shared or reused publicly.
