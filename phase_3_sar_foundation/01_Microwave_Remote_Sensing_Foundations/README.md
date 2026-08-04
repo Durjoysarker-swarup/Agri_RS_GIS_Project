@@ -27,7 +27,7 @@ This repository documents a self-guided learning path built from first principle
 
 | Day | Topic | File | Core Question |
 |---|---|---|---|
-| 1 | Introduction to Microwave Remote Sensing | [`1.1-introduction-microwave-remote-sensing-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.1-introduction-microwave-remote-sensing-notes.md) | What is the electromagnetic spectrum, and why does radar use microwaves instead of visible light? |
+| 1 | Introduction to Microwave Remote Sensing | [`1.1-introduction-microwave-remote-sensing-notes.md`](./01_Microwave_Remote_Sensing_Foundations/01_Introduction_to_Microwave_Remote_Sensing.md) | What is the electromagnetic spectrum, and why does radar use microwaves instead of visible light? |
 | 2 | Active vs. Passive Sensors | [`1.2-active-vs-passive-sensors-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.2-active-vs-passive-sensors-notes.md) | How does a sensor that creates its own energy (radar) differ from one that relies on the Sun (optical)? |
 | 3 | How Radar Images Are Formed | [`1.3-how-radar-images-are-formed-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.3-how-radar-images-are-formed-notes.md) | How do radar pulses, backscatter, range, and azimuth combine to build a SAR image? |
 | 4 | Radar Geometry | [`1.4-radar-geometry-notes.md`](./01_Microwave_Remote_Sensing_Foundations/1.4-radar-geometry-notes.md) | What does the radar actually "see" from orbit, and how does terrain distort that view (foreshortening, layover, shadow)? |
