@@ -2,86 +2,155 @@
 
 ## Overview
 
-This repository contains the Python-based data processing, quality filtering, and gap analysis pipeline for Part 3 of the Sylhet Aman Rice Monitoring project. It evaluates the availability and quality of Sentinel-2 satellite imagery over the Sylhet region (Aman rice growing season, 2022–2024) to evaluate cloud-cover dynamics, temporal observation gaps, and missing data implications for NDVI time-series analysis.
+This repository contains the Python-based data processing, quality filtering, and gap analysis pipeline for Part 3 of the Sylhet Aman Rice Monitoring project. It evaluates the availability and quality of Sentinel-2 satellite imagery over the Sylhet region (Aman rice growing season, 2022–2024) to quantify cloud-cover dynamics, temporal observation gaps, and missing data implications for NDVI time-series analysis.
+
+---
+
+## 🔑 Key Findings
+
+| Metric | Value |
+|--------|-------|
+| **Total acquisition opportunities** | 126 |
+| **Valid observations at 50% threshold** | 47 (37.30%) |
+| **Invalid observations at 50% threshold** | 79 (62.70%) |
+| **Maximum gap (50-80% thresholds)** | 55 days (June 5 – July 30, 2023) |
+| **Maximum gap (90% threshold)** | 90 days |
+| **Null NDVI (0% clear cropland)** | 58 acquisitions (46%) |
+
+---
+
+## ⚠️ Important: Run Notebooks in Order
+
+```
+01 → 02 → 03 → 04
+```
+
+Each notebook saves outputs used by the next one. Running them out of order will cause errors.
+
+---
 
 ## Directory Structure
 
 ```
 03_python_analysis/
 │
-├── README.md                                    # Overview and execution guide
+├── README.md                                    # This file
 │
-├── 01_data_quality_availability.ipynb           # Part 3A: Quality & availability analysis
-├── 02_valid_observation_classification.ipynb    # Part 3B: Clear-cropland thresholding
-├── 03_gap_detection_analysis.ipynb              # Part 3C: Temporal gap & persistence analysis
-├── 04_observed_vs_missing_ndvi.ipynb            # Part 3D: Impact of gaps on NDVI tracking
+├── 01_data_quality_availability.ipynb           # Part 3A: Data loading & basic checks
+├── 02_valid_observation_classification.ipynb    # Part 3B: Threshold classification
+├── 03_gap_detection_analysis.ipynb              # Part 3C: Temporal gap detection
+├── 04_observed_vs_missing_ndvi.ipynb            # Part 3D: NDVI availability
 │
 ├── data/
 │   ├── raw/
-│   │   └── sylhet_aman_observations_2022_2024.csv  # Raw Sentinel-2 scene extraction data
+│   │   └── sylhet_aman_observations_2022_2024.csv
 │   └── processed/
-│       ├── observations_clean.csv               # Standardized & cleaned observation logs
-│       ├── overall_availability.csv             # Summary of overall scene availability
-│       ├── seasonal_monthly_availability.csv    # Monthly/seasonal clear-observation metrics
-│       ├── gap_metrics.csv                      # Inter-observation gap statistics per year
-│       └── threshold_summary.csv                # Sensitivity analysis across threshold levels
+│       ├── observations_clean.csv
+│       ├── overall_availability.csv
+│       ├── seasonal_monthly_availability.csv
+│       ├── gap_metrics.csv
+│       └── threshold_summary.csv
 │
 └── outputs/
-    ├── clear_percentage_timeline.png            # Timeline of clear-sky percentages (2022–2024)
-    ├── monthly_availability.png                 # Monthly clear observation rates
-    ├── gap_distribution.png                     # Histogram/CDF of gap lengths (days)
-    └── availability_by_threshold.png            # Sensitivity curve of threshold vs. availability
+    ├── clear_percentage_timeline.png
+    ├── monthly_availability.png
+    ├── gap_distribution.png
+    └── availability_by_threshold.png
 ```
 
-## Workflow & Notebooks
+---
 
-### 1. Data Quality & Availability Analysis (`01_data_quality_availability.ipynb`)
+## 📓 Notebook Descriptions
 
-**Objective:** Clean raw Sentinel-2 metadata and calculate foundational observation metrics.
+### 01_data_quality_availability.ipynb
+
+**Objective:** Load raw Sentinel-2 metadata and perform foundational data quality checks.
 
 **Key Tasks:**
-- Clean dates, filter target months (June–December, 2022–2024), and compute basic percentages (clear, cloud, water, shadow, etc.).
-- Generate overall summary statistics and monthly/seasonal breakdown tables.
-- Visualize clear-pixel trends and monthly availability patterns.
+- Load CSV and inspect structure (126 observations, 13 columns)
+- Convert dates and validate study period (2022-06-05 to 2024-12-31)
+- Check observations by year: 2022 (42), 2023 (40), 2024 (44)
+- Identify duplicate acquisition dates (Sentinel-2A and 2C)
+- Generate clear-percentage timeline visualization
 
-**Outputs Generated:**
+**Outputs:**
 - `data/processed/observations_clean.csv`
+- `outputs/clear_percentage_timeline.png`
+
+---
+
+### 02_valid_observation_classification.ipynb
+
+**Objective:** Classify observations as valid or invalid based on clear cropland thresholds.
+
+**Key Tasks:**
+- Define valid observations using **50% clear cropland** as primary threshold
+- Perform sensitivity analysis across thresholds: 50%, 60%, 70%, 80%, 90%
+- Calculate monthly availability by threshold
+- Generate monthly availability figure
+
+**Results:**
+
+| Threshold | Valid | Availability |
+|-----------|-------|--------------|
+| 50% | 47 | 37.30% |
+| 60% | 45 | 35.71% |
+| 70% | 42 | 33.33% |
+| 80% | 38 | 30.16% |
+| 90% | 32 | 25.40% |
+
+**Outputs:**
 - `data/processed/overall_availability.csv`
 - `data/processed/seasonal_monthly_availability.csv`
-- `outputs/clear_percentage_timeline.png`
 - `outputs/monthly_availability.png`
 
-### 2. Valid Observation Classification (`02_valid_observation_classification.ipynb`)
+---
 
-**Objective:** Classify usable observations based on clear cropland coverage thresholds.
+### 03_gap_detection_analysis.ipynb
 
-**Key Tasks:**
-- Define valid observations using a baseline threshold (e.g., ≥ 70% clear cropland pixels).
-- Perform sensitivity analysis across thresholds (50%, 60%, 70%, 80%, 90%).
-- Evaluate the trade-off between image quality and observation frequency.
-
-**Outputs Generated:**
-- `data/processed/threshold_summary.csv`
-- `outputs/availability_by_threshold.png`
-
-### 3. Gap Detection Analysis (`03_gap_detection_analysis.ipynb`)
-
-**Objective:** Quantify temporal gaps between consecutive valid observations during the Aman season.
+**Objective:** Quantify temporal gaps between consecutive valid observations.
 
 **Key Tasks:**
-- Calculate inter-observation gap lengths (in days) for each year (2022, 2023, 2024).
-- Compute key metrics: Mean Gap, Median Gap, Max Gap, and Percent of Gaps > 15 days.
-- Plot gap distributions and identify persistent cloud-cover windows during the monsoon season.
+- Calculate inter-observation gap lengths (days) for each season (2022, 2023, 2024)
+- Compute mean, median, and maximum gaps per threshold
+- Identify primary gap period: **June 5 – July 30, 2023 (55 days)**
+- Generate gap distribution by category (5, 6-10, 11-15, 16-20, 21-30, >30 days)
 
-**Outputs Generated:**
+**Per-Year Gap Summary (50% threshold):**
+
+| Year | Valid Dates | Mean Gap | Median Gap | Max Gap |
+|------|-------------|----------|------------|---------|
+| 2022 | 19 | 9.4 | 5.0 | 30 |
+| 2023 | 13 | 17.1 | 12.5 | **55** |
+| 2024 | 15 | 8.6 | 5.0 | 20 |
+
+**Outputs:**
 - `data/processed/gap_metrics.csv`
 - `outputs/gap_distribution.png`
 
-### 4. Observed vs. Missing NDVI Analysis (`04_observed_vs_missing_ndvi.ipynb`)
+---
 
-**Objective:** Assess the impact of missing data on monitoring the Aman rice phenology.
+### 04_observed_vs_missing_ndvi.ipynb
+
+**Objective:** Quantify observation availability and loss at the primary 50% threshold.
 
 **Key Tasks:**
-- Reconstruct composite NDVI time series across the crop cycle.
-- Evaluate how extended cloud gaps (especially June–August monsoon months) affect key phenological stages (heading, tillering, peak vegetation).
-- Compare raw observed trajectories with gap-filled or interpolated curves.
+- Classify observations at 50% clear cropland threshold
+- Calculate observed vs. missing counts
+- Generate threshold sensitivity curve
+
+**Results:**
+
+| Metric | Value |
+|--------|-------|
+| Total opportunities | 126 |
+| Valid (≥50% clear) | 47 |
+| Missing (<50% clear) | 79 |
+| Observation availability | 37.30% |
+| Observation loss | 62.70% |
+
+**Outputs:**
+- `data/processed/threshold_summary.csv`
+- `outputs/availability_by_threshold.png`
+
+---
