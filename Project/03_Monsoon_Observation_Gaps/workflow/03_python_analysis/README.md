@@ -58,11 +58,7 @@ Each notebook saves outputs used by the next one. Running them out of order will
 │       ├── gap_yearly_summary.csv     # From Part 03
 │       │
 │       └── threshold_sensitivity.csv  # From Part 04
-└── outputs/
-    ├── clear_percentage_timeline.png
-    ├── monthly_availability.png
-    ├── gap_distribution.png
-    └── availability_by_threshold.png
+
 ```
 
 ---
