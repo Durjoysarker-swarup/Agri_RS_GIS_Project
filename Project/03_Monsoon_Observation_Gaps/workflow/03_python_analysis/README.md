@@ -42,22 +42,22 @@ Each notebook saves outputs used by the next one. Running them out of order will
 ├── 04_observed_vs_missing_ndvi.ipynb            # Part 04: NDVI availability
 │
 ├── data/
-│   ├── raw/
-│   │   └── sylhet_aman_observations_2022_2024.csv
-│   └── processed/                    ← ALL processed CSVs here
-│       │
-│       ├── observations_clean.csv    # From Part 01
-│       │
-│       ├── overall_availability.csv  # From Part 02
-│       ├── seasonal_monthly_availability.csv  # From Part 02
-│       ├── sylhet_aman_observations_classified.csv  # From Part 02
-│       │
-│       ├── gap_largest_intervals.csv  # From Part 03
-│       ├── gap_overall_summary.csv    # From Part 03
-│       ├── gap_distribution.csv       # From Part 03
-│       ├── gap_yearly_summary.csv     # From Part 03
-│       │
-│       └── threshold_sensitivity.csv  # From Part 04
+    ├── raw/
+    │   └── sylhet_aman_observations_2022_2024.csv
+    └── processed/                    ← ALL processed CSVs here
+        │
+        ├── observations_clean.csv    # From Part 01
+        │
+        ├── overall_availability.csv  # From Part 02
+        ├── seasonal_monthly_availability.csv  # From Part 02
+        ├── sylhet_aman_observations_classified.csv  # From Part 02
+        │
+        ├── gap_largest_intervals.csv  # From Part 03
+        ├── gap_overall_summary.csv    # From Part 03
+        ├── gap_distribution.csv       # From Part 03
+        ├── gap_yearly_summary.csv     # From Part 03
+        │
+        └── threshold_sensitivity.csv  # From Part 04
 
 ```
 
