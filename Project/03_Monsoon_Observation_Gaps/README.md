@@ -1,4 +1,4 @@
-# Monsoon Observation Gaps: Quantifying Sentinel-2 Data Availability for Aman Rice Monitoring in Sylhet, Bangladesh
+# The Limits of Optical Crop Monitoring: Quantifying Monsoon Observation Gaps in Sylhet Rice Systems
 
 ## 📋 Overview
 
@@ -231,34 +231,11 @@ All figures are in `docs/`:
 
 ---
 
-## 🎓 Conference Publication
-
-**BSPST 2026 — Sylhet Agricultural University**
-
-Conference materials in `conference/`:
-- **Abstract:** "Quantifying Monsoon Observation Gaps in Sentinel-2 Imagery for Rice Monitoring in Sylhet, Bangladesh"
-- **Format:** Poster presentation (90 × 120 cm)
-- **Key Findings:** Highlighted in poster with all figures and statistics
-
----
-
-## ✅ How to Use This Repository
-
-### For Reproduction:
-1. **Study Design:** Read `workflow/01_define_observation_system/README.md`
-2. **GEE Processing:** Copy `workflow/02_gee_scripts/01_main_pipeline.js` into Google Earth Engine Code Editor
-   - Requires: Google Earth Engine account
-   - Output: CSV file (place in `workflow/03_python_analysis/data/raw/`)
-3. **Python Analysis:** Run notebooks in order
-   - Requires: Python 3.x + pandas, numpy, matplotlib, seaborn
-   - All processed outputs saved automatically
 
 ### For Citation:
 ```
 Sarker, Durjoy Kumar. (2026). 
-"Quantifying Monsoon Observation Gaps in Sentinel-2 Imagery 
-for Aman Rice Monitoring in Sylhet, Bangladesh (2022–2024)."
-Presented at BSPST 2026, Sylhet Agricultural University.
+"The Limits of Optical Crop Monitoring: Quantifying Monsoon Observation Gaps in Sylhet Rice Systems."
 ```
 
 ---
@@ -268,9 +245,6 @@ Presented at BSPST 2026, Sylhet Agricultural University.
 - ✅ Study design & assumptions documented
 - ✅ GEE pipeline complete and tested
 - ✅ Python analysis pipeline complete
-- ✅ Conference abstract submitted & accepted
-- ✅ Poster prepared for BSPST 2026
-- 🟡 Full research report in progress
 
 ---
 
