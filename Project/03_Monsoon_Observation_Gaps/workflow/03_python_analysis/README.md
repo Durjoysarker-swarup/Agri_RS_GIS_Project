@@ -36,21 +36,28 @@ Each notebook saves outputs used by the next one. Running them out of order will
 │
 ├── README.md                                    # This file
 │
-├── 01_data_quality_availability.ipynb           # Part 3A: Data loading & basic checks
-├── 02_valid_observation_classification.ipynb    # Part 3B: Threshold classification
-├── 03_gap_detection_analysis.ipynb              # Part 3C: Temporal gap detection
-├── 04_observed_vs_missing_ndvi.ipynb            # Part 3D: NDVI availability
+├── 01_data_quality_availability.ipynb           # Part 01: Data loading & basic checks
+├── 02_valid_observation_classification.ipynb    # Part 02: Threshold classification
+├── 03_gap_detection_analysis.ipynb              # Part 03: Temporal gap detection
+├── 04_observed_vs_missing_ndvi.ipynb            # Part 04: NDVI availability
 │
 ├── data/
 │   ├── raw/
 │   │   └── sylhet_aman_observations_2022_2024.csv
-│   └── processed/
-│       ├── observations_clean.csv
-│       ├── overall_availability.csv
-│       ├── seasonal_monthly_availability.csv
-│       ├── gap_metrics.csv
-│       └── threshold_summary.csv
-│
+│   └── processed/                    ← ALL processed CSVs here
+│       │
+│       ├── observations_clean.csv    # From Part 01
+│       │
+│       ├── overall_availability.csv  # From Part 02
+│       ├── seasonal_monthly_availability.csv  # From Part 02
+│       ├── sylhet_aman_observations_classified.csv  # From Part 02
+│       │
+│       ├── gap_largest_intervals.csv  # From Part 03
+│       ├── gap_overall_summary.csv    # From Part 03
+│       ├── gap_distribution.csv       # From Part 03
+│       ├── gap_yearly_summary.csv     # From Part 03
+│       │
+│       └── threshold_sensitivity.csv  # From Part 04
 └── outputs/
     ├── clear_percentage_timeline.png
     ├── monthly_availability.png
