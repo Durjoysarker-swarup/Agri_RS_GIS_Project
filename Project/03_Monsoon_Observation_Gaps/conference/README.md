@@ -8,12 +8,12 @@ This folder contains all materials submitted to and presented at the **5th Inter
 
 ---
 ## Repo Structure
-conference/                   
+`conference/                   
     ├── README.md
     ├── conference_abstract.docx
     ├── poster/
         ├── poster_final.pdf
-        └── poster_source.pptx
+        └── poster_source.pptx`
    
 ## 📁 Contents
 
