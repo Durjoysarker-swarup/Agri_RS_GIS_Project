@@ -1,0 +1,6 @@
+threshold,total_within_season_intervals,mean_interval_days,median_interval_days,maximum_interval_days,minimum_interval_days
+50,44,11.25,5.0,55.0,5.0
+60,42,11.666666666666666,5.0,55.0,5.0
+70,39,12.564102564102564,10.0,55.0,5.0
+80,35,14.0,10.0,55.0,5.0
+90,29,15.344827586206897,10.0,90.0,5.0
