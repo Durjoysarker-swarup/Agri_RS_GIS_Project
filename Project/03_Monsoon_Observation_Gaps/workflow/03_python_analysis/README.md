@@ -78,7 +78,6 @@ Each notebook saves outputs used by the next one. Running them out of order will
 
 **Outputs:**
 - `data/processed/observations_clean.csv`
-- `outputs/clear_percentage_timeline.png`
 
 ---
 
@@ -105,7 +104,7 @@ Each notebook saves outputs used by the next one. Running them out of order will
 **Outputs:**
 - `data/processed/overall_availability.csv`
 - `data/processed/seasonal_monthly_availability.csv`
-- `outputs/monthly_availability.png`
+
 
 ---
 
@@ -128,8 +127,8 @@ Each notebook saves outputs used by the next one. Running them out of order will
 | 2024 | 15 | 8.6 | 5.0 | 20 |
 
 **Outputs:**
-- `data/processed/gap_metrics.csv`
-- `outputs/gap_distribution.png`
+- `data/processed/gap_distribution.csv`
+
 
 ---
 
@@ -153,7 +152,6 @@ Each notebook saves outputs used by the next one. Running them out of order will
 | Observation loss | 62.70% |
 
 **Outputs:**
-- `data/processed/threshold_summary.csv`
-- `outputs/availability_by_threshold.png`
+- `data/processed/threshold_sensitivity.csv`
 
 ---
