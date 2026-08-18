@@ -7,7 +7,14 @@ This folder contains all materials submitted to and presented at the **5th Inter
 **Conference Theme:** "Plant Science and Technology for Sustainable Agriculture: Opportunities and Challenges"
 
 ---
-
+## Repo Structure
+conference/                   
+    ├── README.md
+    ├── conference_abstract.docx
+    ├── poster/
+        ├── poster_final.pdf
+        └── poster_source.pptx
+   
 ## 📁 Contents
 
 | File/Folder | Description |
