@@ -11,7 +11,7 @@ This folder contains all materials submitted to and presented at the **5th Inter
 ```
 conference/                   
     ├── README.md
-    ├── conference_abstract.docx
+    ├── BSPST_Abstract_Sylhet_Sentinel2.docx
     ├── poster/
         ├── poster_final.pdf
         └── poster_source.pptx
@@ -21,7 +21,7 @@ conference/
 
 | File/Folder | Description |
 |-------------|-------------|
-| `conference_abstract.docx` | Submitted abstract (400 words) |
+| `BSPST_Abstract_Sylhet_Sentinel2.docx` | Submitted abstract (400 words) |
 | `poster/` | Poster presentation materials |
 | `pitch/` | Elevator pitch scripts |
 
