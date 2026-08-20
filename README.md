@@ -92,10 +92,12 @@ Completed projects include:
 
 - **Mixed Pixel Uncertainty & Spatial Resolution in Fragmented Agriculture**
   - Explores how spatial resolution and mixed pixels affect field-level NDVI reliability.
+ 
+- **Quantifying Monsoon Observation Gaps in Sentinel-2 Imagery for Rice Monitoring**
+   - Quantify the temporal availability of Sentinel-2 observations for Aman rice monitoring during the monsoon season in Sylhet, Bangladesh.
+
 
 Upcoming projects include:
-
-- Monsoon Gap Analysis
 - SAR vs Optical Monitoring
 - Automated Phenology Extraction
 
