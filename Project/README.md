@@ -25,13 +25,6 @@ It focuses on scale effects such as:
 
 and how these factors influence NDVI stability in smallholder agricultural systems.
 
----
-
-## Goal of This Repository
-
-- Learn core remote sensing workflows
-- Build reproducible geospatial analysis projects
-- Develop a strong portfolio in GIS and agricultural AI
 
 ---
 
