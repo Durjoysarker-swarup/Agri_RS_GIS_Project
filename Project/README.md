@@ -35,10 +35,32 @@ and how these factors influence NDVI stability in smallholder agricultural syste
 
 ---
 
+### Project 3 — Quantifying Monsoon Observation Gaps in Sentinel-2 Imagery for Rice Monitoring
+This project quantifies the temporal availability of Sentinel-2 observations for Aman rice monitoring during the monsoon season in Sylhet, Bangladesh.
+
+It focuses on:
+- observation availability
+- temporal gap detection
+- cloud and shadow contamination
+- threshold sensitivity (50%, 60%, 70%, 80%, 90%)
+- NDVI availability vs. threshold validity
+
+and how these factors influence NDVI stability in smallholder agricultural systems.
+
+---
+
+## Goal of This Repository
+
+- Learn core remote sensing workflows
+- Build reproducible geospatial analysis projects
+- Develop a strong portfolio in GIS and agricultural AI
+
+---
 ## Status
 
 - Project 1: Done
 - Project 2: Done
+- Project 3: Done
 - More projects will be added gradually
 
 ---
