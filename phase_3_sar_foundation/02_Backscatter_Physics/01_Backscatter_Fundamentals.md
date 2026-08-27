@@ -146,7 +146,7 @@ Now we can connect backscatter to radar measurement.
 
 A simplified radar equation contains terms related to:
 
-$P_r$ = ($P_t$*$G_t$*$G_r$*$\lambda$* $\sigma$) / $R$^4
+$P_r$ = ($P_t$ * $G_t$ * $G_r$ * $\lambda$ * $\sigma$) / $R$^4
 Where:
 
 - $P_r$ = received power
