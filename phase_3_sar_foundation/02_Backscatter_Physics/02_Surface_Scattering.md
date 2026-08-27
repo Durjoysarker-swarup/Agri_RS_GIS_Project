@@ -266,6 +266,17 @@ These are two different properties. And that's exactly where:
 
 **The RMS height equation**
 
+$$
+h_{rms} = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(h_i - \bar{h})^2}
+$$
+ 
+**Where:**
+ 
+- $h_i$ = measured surface height
+- $\bar{h}$ = mean surface height
+- $N$ = number of measurements
+- $h_{rms}$ = RMS surface height
+
 Measure how far the surface goes above/below the average, square those differences, average them, then take the square root.
 
 ### B. Correlation length
